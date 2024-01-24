@@ -1,0 +1,70 @@
+@font-face {
+    font-family: starJedi;
+    src: url(./Starjedi.ttf);
+}
+
+body {
+    font-family: 'starJedi', arial;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 0%;
+}
+
+.titulos {
+    cursor: default;
+}
+
+h1,
+h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0%;
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    color: #edda2f;
+}
+
+button {
+    font-family: 'starJedi', 'Arial';
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+#ant:hover {
+    color: red;
+}
+
+#sig:hover {
+    color: rgb(0, 230, 0);
+}
+
+#pagina {
+    padding-left: 1%;
+}
+
+#pagina:hover {
+    cursor: default;
+}
+
+h3 {
+    color: #edda2f;
+}
+
+div {
+    cursor:default;
+}

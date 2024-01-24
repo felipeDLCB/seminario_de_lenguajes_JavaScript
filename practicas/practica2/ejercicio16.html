@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="nombreImagen">
+        <input type="button" value="Mostrar" onclick="mostrarImagen()">
+       <!-- <button class="s-btn s-btn__dropdown" type="button">Dropdown</button> -->
+    </form>
+
+    <p id="imagen">
+
+    </p>
+
+</body>
+<script>
+    function mostrarImagen() {
+        let nombre = document.getElementById('nombreImagen').value;
+        switch (nombre) {
+            case 'imagen-1':
+                document.getElementById('imagen').innerHTML = '<img src=./ironfist.jpg/>';
+                break;
+            case 'imagen-2':
+                document.getElementById('imagen').innerHTML = '<img src=./carnage.jpg/>';
+                break;
+            case 'imagen-3':
+                document.getElementById('imagen').innerHTML = '<img src=./cosmo.jpg/>';
+                break;
+            case '':
+                document.getElementById('imagen').innerHTML = 'Por favor, ingrese texto.';
+                break;
+            default:
+                document.getElementById('imagen').innerHTML = 'No existe una imagen con ese nombre.';
+                break;
+        }
+    }
+</script>
+
+</html>

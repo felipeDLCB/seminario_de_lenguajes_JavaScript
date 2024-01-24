@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <style>
+        body {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <select name="imagenes" id="nombreImagen" onclick="mostrarImagen()">
+            <option value="imagen-1">Imagen 1</option>
+            <option value="imagen-2">Imagen 2</option>
+            <option value="imagen-3">Imagen 3</option>
+        </select>
+    </form>
+
+    <p id="imagen">
+
+    </p>
+
+</body>
+<script>
+    function mostrarImagen() {
+        let nombre = document.getElementById('nombreImagen').value;
+        switch (nombre) {
+            case 'imagen-1':
+                document.getElementById('imagen').innerHTML = '<img src="./ironfist.jpg"/>';
+                break;
+            case 'imagen-2':
+                document.getElementById('imagen').innerHTML = '<img src="./carnage.jpg"/>';
+                break;
+            case 'imagen-3':
+                document.getElementById('imagen').innerHTML = '<img src="./cosmo.jpg"/>';
+                break;
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+
+<body>
+    <select id="seleccion">
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="white" selected="selected">Blanco</option>
+        <option value="blue">Azul</option>
+    </select>
+    <button onclick="cambiarColor()"> Cambiar Color </button>
+</body>
+<script>
+    function cambiarColor() {
+        const seleccion = document.getElementById('seleccion').value;
+        switch (seleccion) {
+            case 'red':
+                document.body.style.backgroundColor = "red";
+                break;
+            case 'green':
+                document.body.style.backgroundColor = "green";
+                break;
+            case 'white':
+                document.body.style.backgroundColor = "white";
+                break;
+            case 'blue':
+                document.body.style.backgroundColor = "blue";
+                break;
+        }
+    }
+</script>
+
+</html>

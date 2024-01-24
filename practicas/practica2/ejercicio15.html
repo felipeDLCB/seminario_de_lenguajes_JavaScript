@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="texto" />
+        <input type="button" value="Enviar" onclick="enviar()" />
+        <input type="text" id="texto2" />
+        <input type="button" value="Enviar" onclick="enviar()" />
+    </form>
+</body>
+<script>
+    /*
+    function enviar() {
+        console.log(document.getElementById('texto').value);
+    }
+    */
+    function enviar() {
+        document.getElementById('texto2').value = document.getElementById('texto').value;
+    }
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Cuántos lados tiene un triángulo?",
+        "correcta": 3,
+        "incorrecta1": 6,
+        "incorrecta2": 4
+    },
+    {
+        "id": 2,
+        "pregunta":"¿De qué colores es este animal?",
+        "img": "https://www.lavanguardia.com/files/og_thumbnail/uploads/2018/09/07/5fa447a463829.jpeg",
+        "correcta": "Amarillo y marrón",
+        "incorrecta1": "Amarillo y azul",
+        "incorrecta2": "Blanco y negro"
+    },
+    {
+        "id":3,
+        "pregunta": "¿Cuánto es 2+2x4?",
+        "correcta": 10,
+        "incorrecta1": 16,
+        "incorrecta2": 8
+    }
+]

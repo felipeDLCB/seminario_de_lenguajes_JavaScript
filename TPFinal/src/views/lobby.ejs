@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <link rel="stylesheet" href="/s/css/lobby.css">
+</head>
+<body>
+    <h1>Bienvenido al Lobby</h1>
+
+    <form action="/partida" method="get">
+        <button type="submit"> Crear Partida</button>
+    </form>
+    <button onclick="mostrar()"> Buscar Partida</button>
+    <form  id="buscarPartida" action="/partida/Id" method="post">
+        <input type="text" id="link" name="link">
+        <button type="submit" name="buscar"> Buscar </button>
+    </form>
+</body>
+
+<script>
+    function mostrar(){
+        const formulario = document.getElementById('buscarPartida');    
+        formulario.style.display = 'block'; // Mostramos el formulario
+    
+
+    }
+</script>
+</html>

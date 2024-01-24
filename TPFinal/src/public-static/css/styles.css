@@ -1,0 +1,7 @@
+#jugador {
+    width: 10vw;
+}
+
+#nombreJugador[disabled], #jugador[disabled] {
+    cursor:not-allowed;
+}

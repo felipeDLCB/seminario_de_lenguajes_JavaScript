@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ta Te Ti</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        td {
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript" src="tateti.js" ></script>
+
+</head>
+
+<body onload="joinGame()">
+    <h1>Ta Te Ti</h1>
+    <p>Jugando en el tablero: <span id="board"></span></p>
+    <p>Turno: <span id="turn"></span></p>
+    <table>
+        <tr>
+            <td id="pos00"></td>
+            <td id="pos01"></td>
+            <td id="pos02"></td>
+        </tr>
+        <tr>
+            <td id="pos10"></td>
+            <td id="pos11"></td>
+            <td id="pos12"></td>
+        </tr>
+        <tr>
+            <td id="pos20"></td>
+            <td id="pos21"></td>
+            <td id="pos22"></td>
+        </tr>
+    </table>
+    <p id="error"></p>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        td {
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+        }
+    </style>
+    <script src="/s/tablero.js"></script>
+</head>
+<body onload="iniciar()">
+
+    <div id="tablero" name="tableroId">
+        <h1 id="titulo">Id de la partida <h1 id="id"> <%=url%></h1> </h1>
+        <table>
+            <tr>
+                <td id="inicio"> Inicio </td>
+                <% for (let i=1; i<=10; i++) { %>
+                    <td> <%=i%></td>
+                <% } %>
+            </tr>
+    </table>
+    <p id="parra">hola</p>
+    </div>
+      <button type="submit" name="crear" onclick="switchingRoles()"> Cambiar de Turno</button>
+    <button onclick="mostrarNumero()"> actualizar Numero</button>
+    
+</body > 
+    
+</html>
